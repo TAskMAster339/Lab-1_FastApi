@@ -44,6 +44,8 @@ def make_calculations(a: int, b: int, char: str):
         A.append(a * b)
         return get_calculation()
     elif char == '/':
+        if b == 0:
+            return None
         A.append(a / b)
         return get_calculation()
     else:
